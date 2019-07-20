@@ -19,10 +19,20 @@ final class FizzBuzzTest extends TestCase
 		$this->assertEquals('Buzz', $buzz->isBuzz(5 * rand()));
 	}
 
+	public function test_a_number_not_divisible_by_five_or_three_remains_a_number()
+	{
+		$fizzbuzz = new FizzBuzz();
+
+		$num = 7;
+
+		$this->assertFalse($fizzbuzz->isFizz($num));
+		$this->assertFalse($fizzbuzz->isBUzz($num));
+	}
+
 	public function test_a_number_divisible_by_five_and_three_is_replaced_by_the_word_fizzbuzz()
 	{
 		$fizzbuzz = new FizzBuzz();
-		
+
 		$num = 15 * rand();
 
 		$this->assertEquals('FizzBuzz', $fizzbuzz->isFizz($num) . $fizzbuzz->isBuzz($num));
