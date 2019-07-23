@@ -1,5 +1,5 @@
 {
-    "name": "themi/fizzbuzz",
+    "name": "lazyelephpant/fizzbuzz",
     "description": "FizzBuzz coding Kata using TDD and Recursion",
     "type": "project",
     "license": "MIT",
